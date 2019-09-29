@@ -25,6 +25,22 @@ h1 span {
   font-size: 2rem;
 }
 
+/*** LINKS ***/
+nav a:link,
+nav a:visited,
+.other-news a:link,
+.other-news a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+nav a:active,
+nav a:hover,
+.other-news a:active,
+.other-news a:hover {
+  color: rgb(95, 95, 95);
+}
+
 /*** HEADER SECTION ***/
 
 header {
@@ -40,17 +56,6 @@ header img {
 
 nav {
   display: none;
-}
-
-nav a:link,
-nav a:visited {
-  color: #000;
-  text-decoration: none;
-}
-
-nav a:active,
-nav a:hover {
-  color: rgb(95, 95, 95);
 }
 
 nav img {
@@ -96,9 +101,6 @@ footer {
 /*** MEDIA QUERIES ***/
 
 @media (min-width: 668px) and (max-width: 1024px) {
-  header {
-    
-  }
 
   header h3 {
     display: none;
@@ -136,10 +138,14 @@ footer {
   }
   
   /*** OTHER-NEWS ***/
-  
+  .other-news-container {
+    margin-left: .3rem;
+  }
+
   .other-news a {
     width: 40%;
     flex-grow: 1;
+    margin-right: 16px;
   }
 }
 
