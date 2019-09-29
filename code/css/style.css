@@ -5,8 +5,8 @@
 
 html, body {
   margin: 0;
-  background: #0025ff;
-  color: #fff;
+  background: #fff;
+  color: #000;
   box-sizing: border-box;
 }
 
@@ -40,6 +40,10 @@ nav {
   flex-direction: column;
 }
 
+.big-news div {
+  text-align: center;
+}
+
 .big-news img {
   width: 100%;
   height: auto;
@@ -53,3 +57,12 @@ nav {
 
 /*** MEDIA QUERIES ***/
 
+@media (min-width: 668px) {
+  .big-news {
+    flex-direction: row;
+  }
+
+  .big-news img {
+    width: 50%;
+  }
+}
