@@ -10,6 +10,12 @@ html, body {
   box-sizing: border-box;
 }
 
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
 /*** HEADER SECTION ***/
 
 header {
@@ -35,6 +41,13 @@ nav {
 }
 
 .big-news img {
+  width: 100%;
+  height: auto;
+}
+
+/*** OTHER NEWS SECTION ***/
+
+.other-news img {
   width: 100%;
 }
 
