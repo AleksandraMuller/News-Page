@@ -1,0 +1,42 @@
+/*** GENERAL SETTINGS ***/
+* {
+  box-sizing: inherit;
+}
+
+html, body {
+  margin: 0;
+  background: #0025ff;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+/*** HEADER SECTION ***/
+
+header {
+  display: flex;
+  align-items: left;
+  padding: 1rem;
+}
+
+header img {
+  height: 4.5rem;
+  margin-right: 3rem;
+}
+
+nav {
+  display: none;
+}
+
+/*** BIG NEWS SECTION ***/
+
+.big-news {
+  display: flex;
+  flex-direction: column;
+}
+
+.big-news img {
+  width: 100%;
+}
+
+/*** MEDIA QUERIES ***/
+
