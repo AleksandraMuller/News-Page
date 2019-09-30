@@ -59,9 +59,9 @@ nav {
   display: none;
 }
 
-nav img {
+/* nav img {
   display: none;
-}
+} */
 
 /*** BIG NEWS SECTION ***/
 
@@ -92,7 +92,6 @@ nav img {
 
 .other-news a {
   margin-bottom: 16px;
-  
 }
 
 .other-news img {
@@ -105,9 +104,13 @@ footer {
   background: #000;
   color: #fff;
   height: 8rem;
+  
+  padding: 2rem;
+}
+
+.footer-flex {
   display: flex;
   justify-content: space-between;
-  padding: 2rem;
 }
 
 .footer-links,
@@ -118,6 +121,11 @@ footer {
 
 .footer-links {
   width: 35%;
+}
+
+footer p {
+  text-align: center;
+  color: rgb(146, 146, 146);
 }
 
 .social-links {
@@ -140,8 +148,13 @@ ion-icon {
     display: none;
   }
 
+  header :nth-child(1) { order: 2; }
+  header :nth-child(2) { order: 1; }
+  header :nth-child(3) { order: 3; }
+
   header img {
-    display: none;
+    /* display: none; */
+    margin: 0;
   }
 
   nav {
@@ -166,10 +179,10 @@ ion-icon {
     margin-left: 2.6rem;
   }
 
-  nav img {
+  /* nav img {
     display: inline-block;
     margin: 0 5rem;
-  }
+  } */
   
   /*** OTHER-NEWS ***/
   .other-news-container {
@@ -255,13 +268,21 @@ ion-icon {
 }
 
 @media (min-width: 1025px) {
-  nav {
+  header img {
+    justify-self: flex-start;
+  }
+
+  .navbar-left {
     margin-left: auto;
   }
 
-  nav img {
-    display: none;
+  nav a {
+    margin-left: 32px;
   }
+
+  /* nav img {
+    display: none;
+  } */
 
   /*** OTHER-NEWS ***/
 
