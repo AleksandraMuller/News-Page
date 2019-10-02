@@ -13,7 +13,7 @@ html, body {
 
 .container {
   width: 100%;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -59,10 +59,6 @@ nav {
   display: none;
 }
 
-/* nav img {
-  display: none;
-} */
-
 /*** BIG NEWS SECTION ***/
 
 .big-news {
@@ -77,7 +73,7 @@ nav {
 
 .big-news img {
   width: 100%;
-  height: auto;
+  /* height: auto; */
 }
 
 /*** OTHER NEWS SECTION ***/
@@ -92,6 +88,9 @@ nav {
 
 .other-news a {
   margin-bottom: 16px;
+  background: rgb(241, 241, 241);
+  box-shadow: 0 1px #FFFFFF inset, 0 1px 3px rgba(124, 123, 123, 0.4);
+  padding: 16px;
 }
 
 .other-news img {
@@ -141,8 +140,15 @@ ion-icon {
 
 
 /*** MEDIA QUERIES ***/
+/***-------------------------***/
+/*** MIN-WIDTH 668px, MAX-WIDTH 1024px ***/
+/***-------------------------***/
 
 @media (min-width: 668px) and (max-width: 1024px) {
+
+  header {
+    justify-content: space-evenly;
+  }
 
   header h3 {
     display: none;
@@ -153,22 +159,11 @@ ion-icon {
   header :nth-child(3) { order: 3; }
 
   header img {
-    /* display: none; */
     margin: 0;
-  }
-
-  nav {
-    text-align: center;
-    margin: 0 auto;
-    vertical-align: middle;
   }
 
   nav a {
      padding-bottom: 10px;
-  }
-
-  nav a, nav img {
-    vertical-align: middle;
   }
 
   nav a:first-child {
@@ -178,11 +173,6 @@ ion-icon {
   nav a:last-child {
     margin-left: 2.6rem;
   }
-
-  /* nav img {
-    display: inline-block;
-    margin: 0 5rem;
-  } */
   
   /*** OTHER-NEWS ***/
   .other-news-container {
@@ -195,7 +185,9 @@ ion-icon {
     margin-right: 16px;
   }
 }
-
+/***-------------------------***/
+/*** MIN-WIDTH: 668px ***/
+/***-------------------------***/
 @media (min-width: 668px) {
   html, body {
     margin: 0;
@@ -267,22 +259,28 @@ ion-icon {
 
 }
 
+/***-------------------------***/
+/*** MIN-WIDTH 1025px ***/
+/***-------------------------***/
+
 @media (min-width: 1025px) {
-  header img {
-    justify-self: flex-start;
+
+  h3 {
+    font-size: 2rem;
   }
 
-  .navbar-left {
-    margin-left: auto;
+  header {
+    justify-content: flex-start;
+  }
+
+   header h3 {
+    flex-grow: 1;
+    text-align: left;
   }
 
   nav a {
     margin-left: 32px;
   }
-
-  /* nav img {
-    display: none;
-  } */
 
   /*** OTHER-NEWS ***/
 
@@ -290,7 +288,7 @@ ion-icon {
     width: 20%;
     margin-right: 16px;
     justify-content: space-evenly;
-    /* flex-grow: 1; */
+    flex-grow: 1;
   }
 
   /*** FOOTER ***/
