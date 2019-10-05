@@ -40,8 +40,6 @@ h1 span {
    text-decoration: none;
  }
 
-
-
 /*** HEADER SECTION ***/
 
 header {
@@ -150,9 +148,9 @@ ion-icon {
     display: none;
   }
 
-  header :nth-child(1) { order: 2; }
-  header :nth-child(2) { order: 1; }
-  header :nth-child(3) { order: 3; }
+  header :nth-child(1) { order: 3; }
+  header :nth-child(3) { order: 1; }
+  header :nth-child(4) { order: 4; }
 
   header img {
     margin: 0;
@@ -171,6 +169,7 @@ ion-icon {
   }
   
   /*** OTHER-NEWS ***/
+
   .other-news-container {
     margin-left: .3rem;
   }
@@ -185,6 +184,7 @@ ion-icon {
 /*** MIN-WIDTH: 668px ***/
 /***-------------------------***/
 @media (min-width: 668px) {
+
   html, body {
     margin: 0;
   }
@@ -196,9 +196,9 @@ ion-icon {
   nav a {
     margin-left: 16px;
   }
-
   
   /*** BIG NEWS SECTION ***/ 
+
   .big-news {
     flex-direction: row;
     border: 1px solid rgb(196, 194, 194);
@@ -289,6 +289,7 @@ ion-icon {
   }
 
   /*** FOOTER ***/
+
   .footer-links {
     width: 20%;
   }
@@ -296,4 +297,16 @@ ion-icon {
   .social-links {
     width: 10%;
   }
+}
+
+/***-------------------------***/
+/*** MIN-WIDTH 1500px ***/
+/***-------------------------***/
+
+@media (min-width: 1500px) {
+
+  .container {
+    max-width: none;
+  }
+
 }
