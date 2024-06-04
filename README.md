@@ -10,4 +10,4 @@ Responsive webpage for mobile, desktop and tablet
 I have build a landing page of a magazine by the use of HTML and CSS. For layout I chose to use flexbox. I am proud of the responsiveness of the header section.
 
 ## Deployed version 🚀
-https://news-site-aleksandra.netlify.com/
+https://news-site-aleksandra.netlify.app/
